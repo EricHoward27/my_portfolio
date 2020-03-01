@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="main-body">
+<nav id="navbar">
+  <header>JS Documentation</header>
+  <a href="#Introduction" class="nav-link">Introduction</a>
+  <a href="#Javascript" class="nav-link">Javascript</a>
+  <a href="#Variables" class="nav-link">Variables</a>
+  <a href="#Scope" class="nav-link">Scope</a>
+  <a href="#Functions" class="nav-link">Functions</a>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>JavaScript was initially created to “make web pages alive”.
+
+The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+
+Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
+
+In this aspect, JavaScript is very different from another language called Java.</p>
+    <p>Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine.
+
+The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
+
+Different engines have different “codenames”. For example:
+
+V8 – in Chrome and Opera.
+SpiderMonkey – in Firefox.
+…There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.
+The terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.</p>
+  </section>
+  <section class="main-section" id="Javascript">
+    <header>Javascript</header>
+    <p>Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+
+JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+
+In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+
+For instance, in-browser JavaScript is able to:
+
+Add new HTML to the page, change the existing content, modify styles.
+React to user actions, run on mouse clicks, pointer movements, key presses.
+Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).
+Get and set cookies, ask questions to the visitor, show messages.
+Remember the data on the client-side (“local storage”).</p>
+    <p>The syntax of JavaScript does not suit everyone’s needs. Different people want different features.
+
+That’s to be expected, because projects and requirements are different for everyone.
+
+So recently a plethora of new languages appeared, which are transpiled (converted) to JavaScript before they run in the browser.
+
+Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it “under the hood”.</p>
+    <code>function greetMe(yourName){
+      alert("Hello " + yourName);
+      }
+    greetMe("World!")</code>
+    <ul>
+      <li>Variables</li>
+      <li>Functions</li>
+      <li>Control Flow</li>
+      <li>Promises</li>
+      <li>Unsual Areas</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>Most of the time, a JavaScript application needs to work with information. Here are two examples:
+
+An online shop – the information might include goods being sold and a shopping cart.
+A chat application – the information might include users, messages, and much more.
+Variables are used to store this information.
+
+A variable
+A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+
+To create a variable in JavaScript, use the let keyword.
+
+The statement below creates (in other words: declares) a variable with the name “message”:
+
+</p>
+    <p>Talking about variables, there’s one more extremely important thing.
+
+A variable name should have a clean, obvious meaning, describing the data that it stores.
+
+Variable naming is one of the most important and complex skills in programming. A quick glance at variable names can reveal which code was written by a beginner versus an experienced developer.
+
+In a real project, most of the time is spent modifying and extending an existing code base rather than writing something completely separate from scratch. When we return to some code after doing something else for a while, it’s much easier to find information that is well-labeled. Or, in other words, when the variables have good names.
+
+Please spend time thinking about the right name for a variable before declaring it. Doing so will repay you handsomely.
+
+</p>
+  </section>
+  <section class="main-section" id="Scope">
+    <header>Scope</header>
+    <p>If an expression has more than one operator, the execution order is defined by their precedence, or, in other words, the default priority order of operators.
+
+From school, we all know that the multiplication in the expression 1 + 2 * 2 should be calculated before the addition. That’s exactly the precedence thing. The multiplication is said to have a higher precedence than the addition.
+
+Parentheses override any precedence, so if we’re not satisfied with the default order, we can use them to change it. For example, write (1 + 2) * 2.
+
+There are many operators in JavaScript. Every operator has a corresponding precedence number. The one with the larger number executes first. If the precedence is the same, the execution order is from left to right.</p>
+    <p>There are three logical operators in JavaScript: || (OR), && (AND), ! (NOT).
+
+Although they are called “logical”, they can be applied to values of any type, not only boolean. Their result can also be of any type.
+
+Let’s see the details.</p>
+    <code>if (year == 2015) {
+  alert( "That's correct!" );
+  alert( "You're so smart!" );
+}</code>
+  </section>
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <p>uite often we need to perform a similar action in many places of the script.
+
+For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere else.
+
+Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
+
+We’ve already seen examples of built-in functions, like alert(message), prompt(message, default) and confirm(question). But we can create functions of our own as well.</p>
+    <p>Functions are actions. So their name is usually a verb. It should be brief, as accurate as possible and describe what the function does, so that someone reading the code gets an indication of what the function does.
+
+It is a widespread practice to start a function with a verbal prefix which vaguely describes the action. There must be an agreement within the team on the meaning of the prefixes.
+
+For instance, functions that start with "show" usually show something.</p>
+    <code>let userName = 'John';
+
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+
+showMessage(); // Hello, John
+The</code>
+    <code>function showMessage(from, text) { // arguments: from, text
+  alert(from + ': ' + text);
+}
+
+showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+showMessage('Ann', "What's up?"); // Ann: What's up? (**)</code>
+    <code>let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+
+if (year == 2015) {
+  alert( 'You guessed it right!' );
+} else {
+  alert( 'How can you be so wrong?' ); // any value except 2015
+}</code>
+    <code>let func = function(arg1, arg2, ...argN) {
+  return expression;
+};</code>
+  </section>
+</main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
