@@ -1,0 +1,56 @@
+<main>
+    <!--This is the navigation bar at the top of the page-->
+<header id="header">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/2000px-Blockbuster_logo.svg.png"
+            id="header-img" alt="blockbuster"> 
+            <nav id="nav-bar">
+        <ul class="site-nav">
+            <li><a class="nav-link" href="#about us">About Us</a></li>
+          <li><a class="nav-link" href="#blockvid">Our Video</a></li>
+          <li><a class="nav-link" href="#contact us">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<body>
+    <!--This is the content of the page-->
+    <div class="container">
+        <section id="about us">
+        <h1>What is BlockBuster Video?</h1>
+        <p>Blockbuster LLC was an American-based provider of home movie and video game rental services through a video rental shop,
+        DVD-by-mail, streaming, video on demand, and cinema theater. Blockbuster expanded internationally throughout the 1990s</p>
+        </section>
+        <!--Create a video section-->
+        <h1>Video</h1>
+        <section id="blockvid">
+        <video width="320" height="240" id=video controls>
+            <source src="video/blockbuster video.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        </section>
+        <!--Create a form section, once submitted it goes to a mock url-->
+        <h1>Contact Us</h1>
+        <section id="contact us">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="fname" id="name-label">First Name:</label><br>
+            <input type="name" id="fname" name="fname" placeholder="John" required><br>
+            <label for="lname" id="name-label">Last Name:</label><br>
+            <input type="name" id="lname" name="lname" placeholder="Doe" required><br>
+            <label for="mail" id="email-label">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="JohnDoe@email.com" required><br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        </section>
+      
+    </div>
+</body>
+</main>
+<footer>
+    <ul>
+        <li> Contact </li>
+        <li> Privacy </li>
+        <li> Feedback </li>
+    </ul>
+</footer>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
