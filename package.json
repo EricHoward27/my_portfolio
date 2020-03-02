@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio Website",
   "main": "index.js",
-  "homepage": "https://EricHoward27.github.io/my_portfolio",
+  "homepage": "https://optimistic-jennings-402c11.netlify.com/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
