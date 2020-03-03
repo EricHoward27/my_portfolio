@@ -6,7 +6,7 @@
   "homepage": "https://erichoward27.github.io/my_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d my_portfolio"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Eric Howard",
   "license": "MIT",
