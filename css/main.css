@@ -58,7 +58,7 @@
       width: 250px;
       height: 250px;
       background-size: cover;
-      background: url(/dist/img/potrait.jpg);
+      background: url(/img/potrait.jpg);
       border-radius: 50%;
       border: solid 3px #d21f3c; }
   .menu .nav-item {
@@ -104,7 +104,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/dist/img/background.png);
+    background: url(/img/background.png);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img::after {
