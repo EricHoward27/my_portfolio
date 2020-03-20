@@ -55,10 +55,9 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background-size: cover;
-      background: url(/img/potrait.jpg);
+      width: 500px;
+      height: 390px;
+      background: url(/img/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #d21f3c; }
   .menu .nav-item {
@@ -239,6 +238,21 @@ main {
   background: #929bab;
   color: #333; }
 
+.resume-btn {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  color: #ec334e; }
+  .resume-btn:hover {
+    background-color: #d21f3c; }
+
+#bold-font {
+  font-weight: bold;
+  color: #d21f3c; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -277,7 +291,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("/dist/img/potrait.jpg");
+      background: url("/img/portrait_mobile.jpg");
+      background-size: cover;
       width: 150px;
       height: 150px; }
   .about-info {

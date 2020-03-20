@@ -168,7 +168,23 @@ main {
   background: lighten($primary-color, 50);
   color: #333;
 }
-
+.resume-btn {
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  color: $font-colors;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+// mystory page font
+#bold-font {
+  font-weight: bold;
+  color: $secondary-color;
+}
 #main-footer {
   text-align: center;
   padding: 1rem;
